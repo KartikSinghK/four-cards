@@ -1,0 +1,263 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* My css */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+#heading {
+  font-weight: 200;
+  font-size: 2rem;
+  margin: 0.6rem 0;
+  color: hsl(234, 12%, 34%);
+}
+#subheading {
+  font-weight: 600;
+  font-size: 2rem;
+  color: hsl(234, 12%, 34%);
+}
+.detail {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  margin: 2rem 0;
+  text-align: center;
+  line-height: 1.7rem;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.card-detail {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  margin: 1.4rem 0;
+  line-height: 1.7rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 2rem;
+  margin:1rem;
+  box-shadow: -4px 2px 46px -19px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -4px 2px 46px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 2px 46px -19px rgba(0, 0, 0, 0.75);
+}
+.card1 {
+  border-top: 5px solid hsl(180, 62%, 55%);
+  position:relative;
+  top:150px;
+}
+.card2 {
+  border-top: 5px solid hsl(0, 78%, 62%);
+
+}
+.card3 {
+  border-top: 5px solid hsl(34, 97%, 64%);
+  order:1;
+}
+.card4 {
+  border-top: 5px solid hsl(212, 86%, 64%);
+  position:relative;
+  top:150px;
+}
+.card-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.card img {
+  width: 65px;
+  height: 65px;
+  align-self: flex-end;
+  margin-top: 0.5rem;
+}
+@media (max-width:1207px) {
+  .card1, .card4 {
+    position:static;
+  }
+  .card3 {
+    order:0;
+  }
+}
+@media (max-width:780px) {
+  #header {
+    width:80%;
+  }
+}
+@media (max-width:485px) {
+  #heading, #subheading {
+    font-size:1.5rem;
+  }
+}
+@media (max-width:370px) {
+  #heading, #subheading {
+    font-size:1.2rem;
+  }
+}
+@media (max-width:290px) {
+  #heading, #subheading {
+    font-size:1rem;
+  }
+  .detail {
+    font-size:0.9rem; 
+  }
+}
